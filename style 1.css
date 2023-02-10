@@ -336,8 +336,8 @@ footer{
     display: flex;
     justify-content: center;
     margin-bottom: 1.4rem;
-}
-.social-links a{
+    
+}.social-links a{
     border: 2px solid #fff;
     color: #fff;
     width: 40px;
@@ -360,7 +360,7 @@ footer span{
     margin-top: 1rem;
     display: block;
     font-family: var(--Playfair);
-    letter-spacing: ;
+    letter-spacing: 2px;
 }
 
 

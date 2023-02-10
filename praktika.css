@@ -136,9 +136,225 @@ header{
     cursor: pointer;
 }
 
-
-
-
 /* End of Header Styling */
 
+/* Start of web Styling */ 
 
+.web{
+    padding: 4.5rem 0;
+
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+.title h2{
+    font-family: var(--Playfair);
+    font-size: 2.4rem;
+
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+    
+}
+.web-content{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+.web item{
+    cursor: pointer;
+    margin: 0;
+    
+}
+.web-img{
+    position: relative;
+    overflow: hidden;
+
+    }
+.web-img::after{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 0 0 0.3);
+} 
+.web-img img{
+    transition: all .5s ease;
+}
+.web-item:hover img{
+    transform: scale(1.2);
+
+}
+.web-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: var(--dark);
+    padding: 0.25rem 1rem;
+    color: #fff;
+
+}
+.web-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.web-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.web-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+
+}
+/* End of web Styling */
+
+/* Start of car Styling */
+.car{
+    background: #f9f9f9;
+    padding: 4.5rem 0;
+
+}
+.car-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+
+}
+.car-img{
+    position: relative;
+    
+}
+.car-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(dark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+
+}
+.car-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+
+}
+.car-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 1rem;
+}
+.car-text h4{
+    font-family: var(--Playfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.car-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+
+}
+.car-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    background-color: var(--dark);
+    transition: all .5s ease;
+
+}
+.car-text a:hover{
+    background: var(--exDark);
+}
+
+/* End of web Styling */
+
+/* Start of About Styling */
+.about{
+    padding: 4.5rem 0;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+
+}
+.about-text{
+    margin: 2rem 0;
+
+}
+.about-text p{
+    font-size: 1.1rem;
+    padding: .6rem 0;
+    opacity: 0.8;
+}
+
+/* End of About Styling */
+
+/* Start of Footer Styling */
+
+footer{
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 .3rem;
+    transition: all .5s ease;
+}
+
+.social-links a:hover{
+    background: #fff;
+    color: var(--dark);
+}
+
+footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* End of Footer Styling */
